@@ -1,10 +1,2 @@
-#slave node
-yum install git gcc make -y
-usermod centos -u 1005
-groupmod centos -g 1005
-groupadd jenkins -g 1000
-useradd jenkins -g 1000 -u 1000
-chown -R 1000:1000 /var/jenkins_home
-mkdir -p /home/jenkins/jenkins_agent
-#only build jobs with label expressions matching this node
+#make sure to copy public SSH key on master to the agent node
 #webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
