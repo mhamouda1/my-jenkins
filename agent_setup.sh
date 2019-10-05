@@ -1,4 +1,4 @@
-yum install java -y
+yum install git java -y
 
 #agent home directory
 mkdir -p /home/jenkins/agent
